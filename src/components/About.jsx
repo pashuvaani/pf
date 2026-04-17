@@ -28,16 +28,38 @@ export const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 relative overflow-hidden">
+    <section id="about" className="pt-8 pb-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/50 to-background" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+        {/* Belief Statement */}
+        <div className="mb-20 max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-[#4F46E5]/10 via-[#7C3AED]/10 to-[#EC4899]/10 backdrop-blur-sm border border-foreground/10 rounded-3xl p-8 md:p-12">
+            <div className="flex items-start mb-4">
+              <div className="w-1 h-16 bg-gradient-to-b from-[#4F46E5] via-[#7C3AED] to-[#EC4899] rounded-full mr-6" />
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">Belief</h3>
+                <p className="text-lg md:text-xl text-foreground/80 italic leading-relaxed">
+                  "I believe understanding animals is the first step to truly caring for them."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             About <span className="bg-gradient-to-r from-[#4F46E5] via-[#7C3AED] to-[#EC4899] bg-clip-text text-transparent">Me</span>
           </h2>
-          <p className="text-xl text-foreground/70 max-w-3xl mx-auto leading-relaxed">
-            I am the Founder & CEO of PashuVaani, an AI-powered platform for animal health. The idea started when I saw a farmer unable to understand his sick cow despite his care. That moment highlighted a gap—animals communicate, but we often miss it. I wondered: if AI can understand humans, can it help us understand animals? PashuVaani aims to detect early health issues and provide timely guidance. We work alongside veterinarians to improve animal care. Our mission is to make animal healthcare more accessible and effective.
+          <p className="text-xl text-foreground/70 max-w-3xl mx-auto leading-relaxed text-justify">
+            I am the Founder & CEO of PashuVaani - building the AI infrastructure for the future of animal healthcare.
+            My journey began with a moment I couldn’t ignore a farmer standing beside his sick cow, doing everything he could, yet unable to understand what was wrong. That moment made me realize something deeper: animal healthcare doesn’t lack effort, it lacks understanding.
+            Animals communicate, but we often fail to hear them.
+            That insight shaped what I’m building today.
+            At PashuVaani, we are developing a full-stack, AI-powered platform that understands animal health in real time - detecting early risks, predicting disease, and delivering instant, actionable guidance across pets, dairy, and poultry. By integrating veterinarians, farms, and supply ecosystems, we are not just creating a product - we are building the default operating system for animal health.
+            But for me, this goes beyond technology.
+            I believe the future of animal healthcare will not be defined by how quickly we react, but by how early we understand. From individual farmers to large-scale farms, our goal is to shift the entire system from reactive treatment to predictive, always-on intelligence.
+            We’re not just improving outcomes - we’re building the foundation for how animals will be understood and cared for at a global scale.
           </p>
         </div>
         {/* Mission Statement */}
@@ -48,7 +70,7 @@ export const About = () => {
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">Mission</h3>
                 <p className="text-lg md:text-xl text-foreground/80 italic leading-relaxed">
-                  "Technology should serve every living being, not just humans."
+                  "To help humans truly understand animals - so no call for help goes unheard."
                 </p>
               </div>
             </div>

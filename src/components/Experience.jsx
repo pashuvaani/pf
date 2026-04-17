@@ -10,35 +10,40 @@ export const Experience = () => {
       role: 'CEO & Founder',
       company: 'PashuVaani Tech Private Limited',
       period: 'Present',
-      description: 'Leading the development of AI-powered solutions for animal healthcare, building a team focused on innovation and impact.',
+      description: 'Building PashuVaani-an AI-driven platform transforming animal healthcare into a more proactive, accessible, and intelligent system.',
       achievements: [
-        'Built AI-driven veterinary advisory platform',
-        'Secured partnerships with veterinary clinics',
-        'Developed proprietary health monitoring algorithms'
-      ]
+        'Leading product strategy and execution of an AI-powered veterinary advisory platform',
+        'Building partnerships with veterinary clinics and ecosystem stakeholders to connect technology with real-world care',
+        'Collaborating with technical teams to design and deploy solutions for early health risk detection and continuous monitoring'
+      ],
+      closingLine: 'Focused on building scalable intelligence systems for animal healthcare.'
     },
     {
       icon: Code2,
-      role: 'Director',
+      role: 'Regional Director',
       company: 'Vesper Group',
       period: '2024-Present',
-      description: 'Led technical teams in developing cutting-edge AI and machine learning solutions for various industries.',
+      description: 'Led regional business operations across sales, operations, and technology—driving growth through execution, data, and cross-functional leadership.',
       achievements: [
-        'Architected scalable AI infrastructure',
-        'Implemented ML models for real-time analytics',
-        'Mentored engineering teams on best practices'
-      ]
+        'Drove regional sales performance and market expansion initiatives',
+        'Oversaw operational workflows to improve efficiency and scalability',
+        'Worked closely with tech teams to implement data-driven solutions aligned with business needs',
+        'Bridged the gap between on-ground operations and technical execution',
+        'Built and managed relationships with clients, partners, and key stakeholders'
+      ],
+
     },
     {
       icon: Brain,
       role: 'Management Engineer',
       company: 'ConsultAdd Inc',
       period: '2022-2024',
-      description: 'Worked on diverse AI and data science projects, gaining expertise in machine learning and predictive analytics.',
+      description: 'Worked on data and technology-driven projects, focusing on analytics, problem-solving, and supporting the development of scalable solutions.',
       achievements: [
-        'Developed NLP models for text analysis',
-        'Built computer vision solutions',
-        'Created predictive analytics dashboards'
+        'Analyzed data to generate insights and support business decision-making',
+        'Collaborated on building data-driven solutions across multiple use cases',
+        'Worked on text and visual data processing as part of project implementations',
+        'Built dashboards and reporting tools to track performance and key metrics'
       ]
     },
     /*{
@@ -114,6 +119,11 @@ export const Experience = () => {
                             </li>
                           ))}
                         </ul>
+                        {item.closingLine && (
+                          <p className="border-t border-foreground/10 pt-4 mt-6 text-foreground/80 font-medium italic">
+                            {item.closingLine}
+                          </p>
+                        )}
                       </div>
                     </div>
                   </CardContent>

@@ -13,7 +13,7 @@ export const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative flex items-center justify-center overflow-hidden"
     >
       {/* Background Image with Gradient Overlay */}
       <div className="absolute inset-0 z-0">
@@ -28,7 +28,7 @@ export const Hero = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-32 pb-16 w-full">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
 
           {/* ── LEFT: Profile Photo Circle ── */}
@@ -86,25 +86,20 @@ export const Hero = () => {
 
           {/* ── RIGHT: Text content ── */}
           <div className="flex-1 text-center lg:text-left">
-            {/* Tagline */}
-            <div className="flex items-center justify-center lg:justify-start mb-6">
-              <span className="text-[#22C55E] font-semibold tracking-wide">CEO & Founder</span>
-            </div>
-
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-normal">
               <span className="bg-gradient-to-r from-[#4F46E5] via-[#7C3AED] to-[#EC4899] bg-clip-text text-transparent">
-                Building the Future
+                Translating the
               </span>
               <br />
               <span className="text-foreground">
-                of Animal Healthcare
+                unspoken into care
               </span>
               <br />
-              <span className="text-foreground/90">with AI</span>
+              <span className="text-foreground/90">that matters</span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-foreground/70 mb-10 max-w-2xl font-light">
-              CEO &amp; Founder | Tech Enthusiast | Empowering Animal Care through Intelligent Systems
+            <p className="text-xl md:text-2xl text-foreground/70 mb-10 max-w-2xl font-light leading-relaxed">
+              CEO & Founder @ PashuVaani | Building AI for Animal Healthcare | Turning Animal Signals into Actionable Care
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-16">
